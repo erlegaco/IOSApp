@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		740A37E73061BD5C005CB1A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740A37C83061BD58005CB1A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740A37CF3061BD58005CB1A0;
+			remoteInfo = UsoDeTextField;
+		};
+		740A37F13061BD5C005CB1A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740A37C83061BD58005CB1A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740A37CF3061BD58005CB1A0;
+			remoteInfo = UsoDeTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740A37D03061BD58005CB1A0 /* UsoDeTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsoDeTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740A37E63061BD5C005CB1A0 /* UsoDeTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsoDeTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740A37F03061BD5C005CB1A0 /* UsoDeTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsoDeTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		740A37F63061BD5C005CB1A0 /* Exceptions for "UsoDeTextField" folder in "UsoDeTextField" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 740A37CF3061BD58005CB1A0 /* UsoDeTextField */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		740A37D23061BD58005CB1A0 /* UsoDeTextField */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				740A37F63061BD5C005CB1A0 /* Exceptions for "UsoDeTextField" folder in "UsoDeTextField" target */,
+			);
+			path = UsoDeTextField;
+			sourceTree = "<group>";
+		};
+		740A37E93061BD5C005CB1A0 /* UsoDeTextFieldTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UsoDeTextFieldTests;
+			sourceTree = "<group>";
+		};
+		740A37F33061BD5C005CB1A0 /* UsoDeTextFieldUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UsoDeTextFieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		740A37CD3061BD58005CB1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		740A37E33061BD5C005CB1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		740A37ED3061BD5C005CB1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740A37C73061BD58005CB1A0 = {
+			isa = PBXGroup;
+			children = (
+				740A37D23061BD58005CB1A0 /* UsoDeTextField */,
+				740A37E93061BD5C005CB1A0 /* UsoDeTextFieldTests */,
+				740A37F33061BD5C005CB1A0 /* UsoDeTextFieldUITests */,
+				740A37D13061BD58005CB1A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		740A37D13061BD58005CB1A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				740A37D03061BD58005CB1A0 /* UsoDeTextField.app */,
+				740A37E63061BD5C005CB1A0 /* UsoDeTextFieldTests.xctest */,
+				740A37F03061BD5C005CB1A0 /* UsoDeTextFieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		740A37CF3061BD58005CB1A0 /* UsoDeTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740A37F73061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextField" */;
+			buildPhases = (
+				740A37CC3061BD58005CB1A0 /* Sources */,
+				740A37CD3061BD58005CB1A0 /* Frameworks */,
+				740A37CE3061BD58005CB1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				740A37D23061BD58005CB1A0 /* UsoDeTextField */,
+			);
+			name = UsoDeTextField;
+			productName = UsoDeTextField;
+			productReference = 740A37D03061BD58005CB1A0 /* UsoDeTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		740A37E53061BD5C005CB1A0 /* UsoDeTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740A37FC3061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextFieldTests" */;
+			buildPhases = (
+				740A37E23061BD5C005CB1A0 /* Sources */,
+				740A37E33061BD5C005CB1A0 /* Frameworks */,
+				740A37E43061BD5C005CB1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740A37E83061BD5C005CB1A0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				740A37E93061BD5C005CB1A0 /* UsoDeTextFieldTests */,
+			);
+			name = UsoDeTextFieldTests;
+			productName = UsoDeTextFieldTests;
+			productReference = 740A37E63061BD5C005CB1A0 /* UsoDeTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		740A37EF3061BD5C005CB1A0 /* UsoDeTextFieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740A37FF3061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextFieldUITests" */;
+			buildPhases = (
+				740A37EC3061BD5C005CB1A0 /* Sources */,
+				740A37ED3061BD5C005CB1A0 /* Frameworks */,
+				740A37EE3061BD5C005CB1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740A37F23061BD5C005CB1A0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				740A37F33061BD5C005CB1A0 /* UsoDeTextFieldUITests */,
+			);
+			name = UsoDeTextFieldUITests;
+			productName = UsoDeTextFieldUITests;
+			productReference = 740A37F03061BD5C005CB1A0 /* UsoDeTextFieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		740A37C83061BD58005CB1A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					740A37CF3061BD58005CB1A0 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					740A37E53061BD5C005CB1A0 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 740A37CF3061BD58005CB1A0;
+					};
+					740A37EF3061BD5C005CB1A0 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 740A37CF3061BD58005CB1A0;
+					};
+				};
+			};
+			buildConfigurationList = 740A37CB3061BD58005CB1A0 /* Build configuration list for PBXProject "UsoDeTextField" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 740A37C73061BD58005CB1A0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 740A37D13061BD58005CB1A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				740A37CF3061BD58005CB1A0 /* UsoDeTextField */,
+				740A37E53061BD5C005CB1A0 /* UsoDeTextFieldTests */,
+				740A37EF3061BD5C005CB1A0 /* UsoDeTextFieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		740A37CE3061BD58005CB1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		740A37E43061BD5C005CB1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		740A37EE3061BD5C005CB1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		740A37CC3061BD58005CB1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		740A37E23061BD5C005CB1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		740A37EC3061BD5C005CB1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		740A37E83061BD5C005CB1A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740A37CF3061BD58005CB1A0 /* UsoDeTextField */;
+			targetProxy = 740A37E73061BD5C005CB1A0 /* PBXContainerItemProxy */;
+		};
+		740A37F23061BD5C005CB1A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740A37CF3061BD58005CB1A0 /* UsoDeTextField */;
+			targetProxy = 740A37F13061BD5C005CB1A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		740A37F83061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextField" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UsoDeTextField/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		740A37F93061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextField" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UsoDeTextField/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		740A37FA3061BD5C005CB1A0 /* Debug configuration for PBXProject "UsoDeTextField" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		740A37FB3061BD5C005CB1A0 /* Release configuration for PBXProject "UsoDeTextField" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		740A37FD3061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextFieldTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsoDeTextField.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UsoDeTextField";
+			};
+			name = Debug;
+		};
+		740A37FE3061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextFieldTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsoDeTextField.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UsoDeTextField";
+			};
+			name = Release;
+		};
+		740A38003061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextFieldUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UsoDeTextField;
+			};
+			name = Debug;
+		};
+		740A38013061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextFieldUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.unan.fes.UsoDeTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UsoDeTextField;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		740A37CB3061BD58005CB1A0 /* Build configuration list for PBXProject "UsoDeTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740A37FA3061BD5C005CB1A0 /* Debug configuration for PBXProject "UsoDeTextField" */,
+				740A37FB3061BD5C005CB1A0 /* Release configuration for PBXProject "UsoDeTextField" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		740A37F73061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740A37F83061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextField" */,
+				740A37F93061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextField" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		740A37FC3061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740A37FD3061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextFieldTests" */,
+				740A37FE3061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextFieldTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		740A37FF3061BD5C005CB1A0 /* Build configuration list for PBXNativeTarget "UsoDeTextFieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740A38003061BD5C005CB1A0 /* Debug configuration for PBXNativeTarget "UsoDeTextFieldUITests" */,
+				740A38013061BD5C005CB1A0 /* Release configuration for PBXNativeTarget "UsoDeTextFieldUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 740A37C83061BD58005CB1A0 /* Project object */;
+	validationLevel = 1;
+}

@@ -1,0 +1,92 @@
+name: Build iOS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Cancela ejecuciones anteriores de la misma rama para no gastar minutos
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT: UsoDeTextField.xcodeproj
+  SCHEME: UsoDeTextField
+
+jobs:
+  # Etapa 1: barata (Linux). Si falla, ni siquiera arranca el job de macOS.
+  checks:
+    name: Verificaciones rápidas
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar estructura del proyecto
+        run: |
+          test -d "$PROJECT" || { echo "::error::No se encontró $PROJECT en la raíz del repo"; exit 1; }
+          test -f "$PROJECT/project.pbxproj" || { echo "::error::Falta project.pbxproj"; exit 1; }
+
+      - name: Verificar scheme compartido
+        run: |
+          if ! ls "$PROJECT"/xcshareddata/xcschemes/*.xcscheme >/dev/null 2>&1; then
+            echo "::error::No hay scheme compartido. En Xcode: Product > Scheme > Manage Schemes > marca 'Shared' y haz commit."
+            exit 1
+          fi
+
+      - name: Verificar que no se subió basura de Xcode
+        run: |
+          if git ls-files | grep -E 'xcuserdata/|__MACOSX/|\.xcuserstate$'; then
+            echo "::error::Hay archivos personales de Xcode en el repo (ver lista arriba). Quítalos con git rm -r --cached."
+            exit 1
+          fi
+
+      - name: Verificar deployment target
+        run: |
+          grep -ho 'IPHONEOS_DEPLOYMENT_TARGET = [0-9.]*' "$PROJECT/project.pbxproj" | sort -u
+
+  # Etapa 2: cara (macOS). Compila para simulador sin firmar.
+  build:
+    name: Compilar (simulador)
+    needs: checks
+    # Imagen con Xcode 27 (GA desde oct 2026). macos-latest trae un Xcode anterior
+    # y no puede abrir proyectos creados con Xcode 27.
+    runs-on: xcode-27
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mostrar versión de Xcode
+        run: |
+          ls -d /Applications/Xcode*.app
+          xcodebuild -version
+          xcodebuild -showsdks | grep -i simulator
+
+      - name: Mostrar schemes y targets
+        run: xcodebuild -list -project "$PROJECT"
+
+      - name: Compilar
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project "$PROJECT" \
+            -scheme "$SCHEME" \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            build | (command -v xcbeautify >/dev/null && xcbeautify || cat)
+
+      - name: Empaquetar la app para simulador
+        run: |
+          cd build/Build/Products/Debug-iphonesimulator
+          zip -r -q "$GITHUB_WORKSPACE/UsoDeTextField-simulator.zip" UsoDeTextField.app
+
+      - name: Subir la app como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: UsoDeTextField-simulator
+          path: UsoDeTextField-simulator.zip
+          retention-days: 7

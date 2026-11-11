@@ -14,9 +14,6 @@ concurrency:
 env:
   PROJECT: UsoDeTextField.xcodeproj
   SCHEME: UsoDeTextField
-  # Opcional: fija una versión concreta de Xcode, por ejemplo "Xcode_27.0".
-  # Si lo dejas vacío, se usa la más reciente que no sea beta.
-  XCODE_APP: ""
 
 jobs:
   # Etapa 1: barata (Linux). Si falla, ni siquiera arranca el job de macOS.
@@ -54,22 +51,16 @@ jobs:
   build:
     name: Compilar (simulador)
     needs: checks
+    # Imagen con Xcode 27 (GA desde oct 2026). macos-latest trae un Xcode anterior
+    # y no puede abrir proyectos creados con Xcode 27.
     runs-on: xcode-27
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
-      - name: Seleccionar Xcode
+      - name: Mostrar versión de Xcode
         run: |
-          echo "Versiones instaladas:"
           ls -d /Applications/Xcode*.app
-          if [ -n "$XCODE_APP" ]; then
-            APP="/Applications/$XCODE_APP.app"
-          else
-            APP=$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)
-          fi
-          echo "Usando: $APP"
-          sudo xcode-select -s "$APP/Contents/Developer"
           xcodebuild -version
           xcodebuild -showsdks | grep -i simulator
 
@@ -84,5 +75,18 @@ jobs:
             -scheme "$SCHEME" \
             -sdk iphonesimulator \
             -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             build | (command -v xcbeautify >/dev/null && xcbeautify || cat)
+
+      - name: Empaquetar la app para simulador
+        run: |
+          cd build/Build/Products/Debug-iphonesimulator
+          zip -r -q "$GITHUB_WORKSPACE/UsoDeTextField-simulator.zip" UsoDeTextField.app
+
+      - name: Subir la app como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: UsoDeTextField-simulator
+          path: UsoDeTextField-simulator.zip
+          retention-days: 7
